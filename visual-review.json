@@ -1,0 +1,25 @@
+{
+  "pdf_sha256": "3c63ecf046c5b152f8641e20e91eb24af6f3176b287e4d3357c4916d13013895",
+  "page_count": 17,
+  "pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "all_pages_inspected": true,
+  "notes": "All 17 pages re-rendered at 110 dpi and inspected after the polish pass. Table 2 (caption and all rows) on p. 13; Figure 2 on p. 14 with the new legend, no overlap with the curves; reference list pp. 16-17 shows subscripts in GL_3 and GSO_6, script N in N = 4 and italic L; no missing glyphs. Residual white space at the foot of p. 6 accepted. Rebuilt for status published (2026-10-21): all 17 pages rendered at 100 dpi are pixel-identical to the inspected PDF 8cc4c7de2e4e; record moved to 3c63ecf046c5 (after a second rebuild for the web blurb, also pixel-identical)."
+}

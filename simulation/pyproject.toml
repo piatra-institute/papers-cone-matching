@@ -1,0 +1,11 @@
+[project]
+name = "cone-matching-sim"
+version = "0.1.0"
+description = "Exact checks for cone matching and integral constraints in a singular relative Langlands duality: root data, redundancy classification, invariant vectors, binary-code lattices"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "sympy>=1.12",
+    "matplotlib>=3.8",
+]

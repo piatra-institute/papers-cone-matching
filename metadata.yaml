@@ -1,0 +1,37 @@
+slug: cone-matching
+web_slug: cone-matching
+title: Cone Matching and Integral Constraints in Relative Langlands Duality
+header: Cone Matching and Integral Constraints
+created: 2026-10
+date: October 2026
+paper_dir: paper
+has_simulation: true
+claims_target: claims.yaml
+repo: git@github.com:piatra-institute/papers-cone-matching.git
+github: https://github.com/piatra-institute/papers-cone-matching
+status: published
+abstract: 'Chen and Venkatesh proved that two pairs of singular spaces, built from the nilpotent cone
+  of $3\times 3$ matrices and from $(2,2,2)$-tensors of vanishing hyperdeterminant, are numerically weakly
+  dual in the sense of relative Langlands duality. The decisive step of their proof is that the inequalities
+  describing integral points of one space coincide with the inequalities describing the weights of regular
+  functions on the other. They attribute this to coincidences specific to their groups and expect the
+  underlying convex reduction to occur only for groups isogenous to their examples. We analyse the same
+  comparison for every split reductive group with one-dimensional centre. The automorphic inequalities
+  reduce in this way for the root types $A_2$, $B_2$, $G_2$ and $A_1^3$ and for no others. The two cones
+  coincide exactly when, in addition, the integer $d = \langle\theta_G,\nu_G\rangle$ pairing the primitive
+  central character with the primitive central cocharacter equals $1/(\kappa-1)$, where $\kappa = \langle\rho,\check\rho\rangle$;
+  this leaves $A_2$ with $d=1$ and $A_1^3$ with $d=2$. Equal cones need not index equal sets of representations.
+  The description of the coordinate ring that the comparison uses requires the extra condition $\langle\lambda,\check\rho''\rangle\in\mathbb{Z}$
+  when the shifted cocharacter $\check\rho''$ is only rational, and with it the two supports agree if
+  and only if the shifted cocharacter of the dual group is integral. Of the 35 labelled global forms of
+  type $A_1^3$ with $d=2$, five pass the test for both identities: the published pair and three copies
+  of the self-dual group $\mathrm{SO}_4\times\mathrm{GL}_2$. Exact computer checks cover all root types
+  up to rank 8. No new period identity is proved.'
+build_resources:
+- simulation/output/figures/cones.png
+- simulation/output/figures/integrality.png
+web_blurb: 'In two singular examples of relative Langlands duality, integrality inequalities on one side
+  match the weights of functions on the other. Classifying when this happens separates three conditions:
+  a convex reduction that holds for root types A₂, B₂, G₂ and A₁³, an integral central calibration that
+  leaves A₂ and A₁³, and an integrality condition on the shifted cocharacter that only some global forms
+  satisfy.'

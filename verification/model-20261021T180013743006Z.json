@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "model",
+  "started": "2026-10-21T17:59:25.248743+00:00",
+  "finished": "2026-10-21T17:59:42.431043+00:00",
+  "command": [
+    "uv",
+    "run",
+    "python",
+    "run_all.py"
+  ],
+  "cwd": "simulation",
+  "runtime": {
+    "scope": "recorder",
+    "python": "3.13.3 (main, Apr  9 2025, 03:47:57) [Clang 20.1.0 ]",
+    "platform": "macOS-15.1-arm64-arm-64bit-Mach-O"
+  },
+  "execution_result": null,
+  "execution": {
+    "status": "PASS",
+    "exit_code": 0,
+    "detail": "command completed"
+  },
+  "input_scope": "execution-v1",
+  "additional_inputs": [],
+  "inputs": {
+    "simulation/cones.py": "412767f72b7c8dac5453277cc4c981bd531e290ec0959cdb03b4b33553e821a8",
+    "simulation/examples.py": "5623a92d4b32ce5184c8cd9f9933923bf285e014975870cac9acaa8a7763e05e",
+    "simulation/figures.py": "0f99b480abfc0bf726e6cc9c176970f0eb617714415d31bbf3fe46d3494cbb6e",
+    "simulation/invariants.py": "c5321c992b4a45f0b954d81f4899771cbb88eda1c5cd1ac1d96aa4b1b8ef1bd6",
+    "simulation/lattices.py": "e55010ec204bbebe2ff32a52033a8683a331b7182faf36720bcd78d2f8e86edd",
+    "simulation/pyproject.toml": "af3506c0a122f1842deb7161e3adf8d950417f653119345ac18f60e91c9a62a6",
+    "simulation/rootdata.py": "9e7672389a202bb2cad54653ea4a92805189aad7b833e5da752d449764b57553",
+    "simulation/run_all.py": "19e9a49808097768ffa046ed506c922030a01a0aaf038992f8bed5d845430856",
+    "simulation/uv.lock": "8783f45aaf158cfcab9ed98802b043f89ebfedd5929f263826e0fbd1de38604e"
+  },
+  "artifacts": {
+    "simulation/output/results.json": "0bc00ab6f62d68ee75d43e6119f7bc7932f41ffd4a9862b32f7ad096cca9fa02"
+  }
+}

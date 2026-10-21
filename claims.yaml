@@ -1,0 +1,748 @@
+schema: 1
+coverage: reviewed
+reviewed_manuscript_sha256: a075fdace83f1ae08d93fa49449e8ab139b01d60d3d82497b401f464c0e1e848
+claims:
+- id: abs-red
+  kind: interpretation
+  passage: The automorphic inequalities reduce in this way for the root types $A_2$, $B_2$, $G_2$ and $A_1^3$ and
+    for no others.
+  rationale: Theorem 3, proved in Section 3.1 (sufficiency by the barycentric matrices of Table 1, necessity by
+    the node bound (2)); checks redundancy_exactly_A2_B2_G2_A1^3, certificates_exact and node_bound_excludes_all_other_irreducible
+    in simulation/output/results.json.
+- id: abs-cone
+  kind: interpretation
+  passage: The two cones coincide exactly when, in addition, the integer $d = \langle\theta_G,\nu_G\rangle$ pairing
+    the primitive central character with the primitive central cocharacter equals $1/(\kappa-1)$, where $\kappa
+    = \langle\rho,\check\rho\rangle$; this leaves $A_2$ with $d=1$ and $A_1^3$ with $d=2$.
+  rationale: Lemma 2 and Corollary 4, proved in Sections 2.4 and 3.2; check cone_matching_exactly_A2_A1^3.
+- id: abs-int
+  kind: interpretation
+  passage: The description of the coordinate ring that the comparison uses requires the extra condition $\langle\lambda,\check\rho'\rangle\in\mathbb{Z}$
+    when the shifted cocharacter $\check\rho'$ is only rational, and with it the two supports agree if and only
+    if the shifted cocharacter of the dual group is integral.
+  rationale: Proposition 5 and Theorem 6, proved in Sections 4 and 5.1; checks invariants_A1_match_corrected_criterion
+    and invariants_A1_uncorrected_criterion_fails.
+- id: abs-35
+  kind: computation
+  passage: 'Of the 35 labelled global forms of type $A_1^3$ with $d=2$, five pass the test for both identities:
+    the published pair and three copies of the self-dual group $\mathrm{SO}_4\times\mathrm{GL}_2$.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lattices/admissible
+    reported: '35'
+    units: binary codes
+    conditions: admissible codes C in F_2^4 (labelled global forms of type A1^3 with d = 2); exact checks, simulation/run_all.py
+      (rational arithmetic)
+- id: abs-five
+  kind: interpretation
+  passage: 'Of the 35 labelled global forms of type $A_1^3$ with $d=2$, five pass the test for both identities:
+    the published pair and three copies of the self-dual group $\mathrm{SO}_4\times\mathrm{GL}_2$.'
+  rationale: Proposition 7 (five codes between <u> and u-perp; /lattices/passing_both = 5) and Table 2 identification
+    of the groups.
+- id: abs-rank
+  kind: computation
+  passage: Exact computer checks cover all root types up to rank 8.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /config/max_rank
+    reported: '8'
+    units: rank
+    conditions: maximal total rank of the semisimple types enumerated; exact checks, simulation/run_all.py (rational
+      arithmetic)
+- id: abs-scope
+  kind: interpretation
+  passage: No new period identity is proved.
+  rationale: 'Scope statement: the paper analyses the support comparison of [CV, §7.4] only.'
+- id: s-bzsv
+  kind: source
+  passage: Relative Langlands duality, proposed by Ben-Zvi, Sakellaridis and Venkatesh, pairs a Hamiltonian space
+    for a reductive group $G$ with a Hamiltonian space for its dual group $\check G$, so that periods of automorphic
+    forms on one side correspond to $L$-functions attached to the other [@benzvi2024].
+  evidence:
+    citation_id: benzvi2024
+    locator: Abstract and §1
+    verification_note: 'arXiv abstract read: pairs a Hamiltonian space for G with one for the dual group and recovers
+      at a numerical level the period/L-function relationship; arithmetic analogue of electric-magnetic duality
+      of boundary conditions.'
+    verified: true
+- id: s-feng
+  kind: source
+  passage: Its ingredients include the dual groups attached to spherical varieties [@sakellaridis2017; @knop2017],
+    and categorical forms of its conjectures have been tested in low-rank cases [@feng2025].
+  evidence:
+    citation_id: feng2025
+    locator: Abstract
+    verification_note: 'Crossref abstract read: evidence for BZSV categorical conjectures in low-rank examples via
+      derived Fourier analysis and chiral algebras.'
+    verified: true
+- id: s-knop
+  kind: source
+  passage: Its ingredients include the dual groups attached to spherical varieties [@sakellaridis2017; @knop2017],
+    and categorical forms of its conjectures have been tested in low-rank cases [@feng2025].
+  evidence:
+    citation_id: knop2017
+    locator: Abstract
+    verification_note: 'Abstract read: existence of the isogeny from the Sakellaridis-Venkatesh dual group of a
+      spherical variety to the dual group, in full generality.'
+    verified: true
+- id: s-cv71
+  kind: source
+  passage: 'Their Theorem 7.1 shows that two pairs of singular spaces satisfy a numerical form of the duality: for
+    $G = \mathrm{PGL}_3\times\mathbb{G}_m$ the space $X$ is the nilpotent cone of $3\times 3$ matrices, and one
+    of the two identities is essentially Ginzburg''s integral representation of the adjoint $L$-function of $\mathrm{GL}_3$
+    [@ginzburg1991]; for a group isogenous to $\mathrm{SL}_2^3\times\mathbb{G}_m$ the space $X$ consists of $(2,2,2)$-tensors
+    of vanishing hyperdeterminant, and one identity is essentially Garrett''s integral representation of the triple
+    product $L$-function [@garrett1987].'
+  evidence:
+    citation_id: chen2026
+    locator: Theorem 7.1, §1.1, §6
+    verification_note: 'arXiv v1 read in full (Sections 1, 4-7); journal version consulted through the publisher
+      page for Proposition 5.1, (57), (66), (70), Remark 7.4 and §6.5, which agree with arXiv v1. Theorem 7.1: Ginzburg
+      case PGL3 x Gm / SL3 x Gm and Garrett case (51)/(53), discrepancy 3.'
+    verified: true
+- id: s-gin
+  kind: source
+  passage: 'Their Theorem 7.1 shows that two pairs of singular spaces satisfy a numerical form of the duality: for
+    $G = \mathrm{PGL}_3\times\mathbb{G}_m$ the space $X$ is the nilpotent cone of $3\times 3$ matrices, and one
+    of the two identities is essentially Ginzburg''s integral representation of the adjoint $L$-function of $\mathrm{GL}_3$
+    [@ginzburg1991]; for a group isogenous to $\mathrm{SL}_2^3\times\mathbb{G}_m$ the space $X$ consists of $(2,2,2)$-tensors
+    of vanishing hyperdeterminant, and one identity is essentially Garrett''s integral representation of the triple
+    product $L$-function [@garrett1987].'
+  evidence:
+    citation_id: ginzburg1991
+    locator: '[CV] §1.1'
+    verification_note: Identity checked in Crossref (Invent. Math. 105, 571-588); role as stated in [CV, §1.1].
+    verified: true
+- id: s-exotic
+  kind: source
+  passage: For singular spherical varieties an established approach replaces the characteristic function of integral
+    points by an exotic basic function built from intersection cohomology of arc spaces, whose local factors recover
+    $L$-values [@braverman1999; @sakellaridis2012; @bouthier2016; @sakellaridis2022].
+  evidence:
+    citation_id: bouthier2016
+    locator: Abstracts; [CV] §1.4
+    verification_note: Abstracts read for bouthier2016, sakellaridis2022 (intersection complexes of arc spaces,
+      basic function as generating function of local unramified L-functions), braverman1999 (Schwartz space of the
+      basic affine space), sakellaridis2012; framing follows [CV, §1.4].
+    verified: true
+- id: s-naive
+  kind: source
+  passage: Chen and Venkatesh keep the naive basic function and find that the theory remains dual, with a dual space
+    that is itself singular [@chen2026, §1.4].
+  evidence:
+    citation_id: chen2026
+    locator: §1.4
+    verification_note: 'CV §1.4: one can proceed more naively, without an exotic basic function; the dual in this
+      naive sense is singular.'
+    verified: true
+- id: s-coinc
+  kind: source
+  passage: 'The authors stress that the duality of these spaces is not a general fact: it uses numerical coincidences
+    specific to the groups considered [@chen2026, §1.1].'
+  evidence:
+    citation_id: chen2026
+    locator: §1.1
+    verification_note: 'CV §1.1: "the fact that these are dual ... is not a general fact - it uses numerical coincidences
+      specific to the groups G mentioned above".'
+    verified: true
+- id: s-key
+  kind: source
+  passage: The key point of the proof is that the inequalities defining integrality of points of $X$ match the set
+    of weights occurring in functions on $\check X$, and vice versa [@chen2026, §7].
+  evidence:
+    citation_id: chen2026
+    locator: §7
+    verification_note: 'CV §7, opening of the proof of Theorem 7.1: inequalities defining integrality on X match
+      the weights occurring in functions on the dual, and vice versa.'
+    verified: true
+- id: s-toric
+  kind: source
+  passage: In the toric case this matching holds by construction, because integral points of a toric variety and
+    monomials on its dual are indexed by the same cone [@chen2024, §1.2 and Definition 2.3].
+  evidence:
+    citation_id: chen2024
+    locator: §1.2, Definition 2.3
+    verification_note: 'arXiv v2 read: §1.2 states integrality on X(F_v) <-> weights of functions on the dual; Definition
+      2.3 defines toric dual varieties by dual cones.'
+    verified: true
+- id: s-rem74
+  kind: source
+  passage: Remark 7.4 of @chen2026 records the expectation that "this phenomenon only occurs in cases isogenous
+    to the Ginzburg and Garrett examples."
+  evidence:
+    citation_id: chen2026
+    locator: Remark 7.4
+    verification_note: Remark 7.4 quoted from arXiv v1 and identical in the journal version (publisher page read
+      2026-10-21).
+    verified: true
+- id: i-35
+  kind: computation
+  passage: For root type $A_1^3$ with $d = 2$ this happens for five of the 35 labelled global forms (Proposition
+    7).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lattices/admissible
+    reported: '35'
+    units: binary codes
+    conditions: admissible codes; exact checks, simulation/run_all.py (rational arithmetic)
+- id: i-deg3
+  kind: computation
+  passage: For $\mathrm{GL}_2\times\mathrm{PGL}_2\times\mathrm{PGL}_2$, which has the same cones as Garrett's example,
+    one of the two support comparisons fails from central degree 3 onward.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /gl2_pgl2_pgl2_summary/first_degree_with_gap
+    reported: '3'
+    units: central degree z
+    conditions: first z with different label counts, identity (1), GL2 x PGL2 x PGL2; exact checks, simulation/run_all.py
+      (rational arithmetic)
+- id: s-653
+  kind: source
+  passage: 'The published period identities are unaffected: in all four groups of Theorem 7.1 of @chen2026 the shifted
+    cocharacter is a genuine cocharacter, a point the authors make explicitly for the dual Garrett group.'
+  evidence:
+    citation_id: chen2026
+    locator: journal version §6.5
+    verification_note: 'Journal version §6.5 (publisher page read 2026-10-21): rho-check-prime descends to a genuine
+      cocharacter on the quotient by the diagonal mu_3.'
+    verified: true
+- id: s-setup
+  kind: source
+  passage: Both $\check\theta_G$ and $\check\rho'$ may be defined only on a finite cover of $\mathbb{G}_m$; the
+    source allows this explicitly.
+  evidence:
+    citation_id: chen2026
+    locator: §5.1
+    verification_note: 'CV §5.1 (both versions): "we allow ourselves to pass to a finite cover to define this cocharacter".'
+    verified: true
+- id: l1
+  kind: interpretation
+  passage: '**Lemma 1.** (a) $d$ is a positive integer, equal to the order of $Z(G)^0\cap[G,G]$.'
+  rationale: Lemma 1, proved in Section 2.1; check against the named groups in /lattices/named and the GL3 example.
+- id: s-57
+  kind: source
+  passage: The relation $\theta_G \leftrightarrow \gamma\,\check\theta_{\check G}$ in (57) of @chen2026 is Lemma
+    1(c) with $\gamma = d$; in the source, $\gamma$ is also defined as $1/(\kappa - 1)$ [@chen2026, (56)], and the
+    coincidence of these two numbers is the first of the conditions found below.
+  evidence:
+    citation_id: chen2026
+    locator: (56), (57)
+    verification_note: 'CV (57) and (56): gamma = 1/(a-1) with a = <rho, rho-check>; (57) theta_G <-> gamma theta-check
+      of the dual.'
+    verified: true
+- id: d-coords
+  kind: definition
+  passage: In these coordinates $$R(x) := \langle\chi,\rho\rangle = \sum_\beta n_\beta x_\beta,\qquad \langle\chi,\rho-\alpha\rangle
+    = R(x) - x_\alpha,\qquad W_\alpha(x) := \frac{\langle\chi,\varpi_\alpha\rangle}{m_\alpha} = \frac{\sum_\beta
+    c_{\alpha\beta}x_\beta}{\sum_\beta c_{\alpha\beta}}.$$ Every $c_{\alpha\beta}$ is nonnegative, so $W_\alpha$
+    is a weighted mean of the $x_\beta$.
+  rationale: Definitions of Section 2.2; nonnegativity of the inverse Cartan matrix of a finite root system.
+- id: s-55
+  kind: source
+  passage: Proposition 5.5 of @chen2026 determines which points of $X(F_v)$ of the form $Su_t\varpi^\chi$ are integral,
+    for any $G$ as above with $\kappa > 1$.
+  evidence:
+    citation_id: chen2026
+    locator: Proposition 5.5, (64)-(66), Proposition 7.3
+    verification_note: CV Proposition 5.5, (45)-(46), (62)-(66) and Proposition 7.3 read in arXiv v1.
+    verified: true
+- id: s-58
+  kind: source
+  passage: We call the set of real $\chi$ satisfying them with $x\ge 0$ the automorphic cone $$\mathcal{A} = \left\{x\ge
+    0,\ \ \frac{R}{\kappa-1}\ \ge\ z\ \ge\ \max\Big(\max_\alpha\frac{R - x_\alpha}{\kappa-1},\ \max_\alpha W_\alpha\Big)\right\}.$$
+    Dropping the inequalities $z\ge W_\alpha$ gives the simplified cone $$\mathcal{B} = \left\{x\ge 0,\ \ \frac{R}{\kappa-1}\
+    \ge\ z\ \ge\ \max_\alpha\frac{R - x_\alpha}{\kappa-1}\right\},$$ which is the form (58) that the automorphic
+    inequalities take in the published examples, where the inequalities $z \ge W_\alpha$ follow from the others
+    because each $\varpi_\alpha/m_\alpha$ lies in the convex hull of the points $(\rho-\beta)/(\kappa-1)$ [@chen2026,
+    §7.1(2)].
+  evidence:
+    citation_id: chen2026
+    locator: §7.1(2), (58)
+    verification_note: 'CV §7.1(2): points n^{-1} varpi lie in the convex hull of (rho - alpha)/(a-1); (66) reduces
+      to (58).'
+    verified: true
+- id: s-51
+  kind: source
+  passage: On the spectral side, Proposition 5.1 of @chen2026 states that $k[\check X]$ is the direct sum of the
+    duals $V_\lambda^*$ of the irreducible representations of $\check G$ whose highest weights $\lambda\in X^*(\check
+    T)$ satisfy $0\le\langle\lambda,\check\rho'_{\check G}\rangle\le\min_{\check\alpha}\langle\lambda,\check\alpha\rangle$.
+  evidence:
+    citation_id: chen2026
+    locator: Proposition 5.1, (69)-(70)
+    verification_note: CV Proposition 5.1 (32) and §7.4 (69)-(70); statement identical in the journal version.
+    verified: true
+- id: s-equiv
+  kind: source
+  passage: In the published examples $d = 1/(\kappa - 1)$, and the source concludes from the convex reduction that
+    the two descriptions are "exactly equivalent" [@chen2026, §7.4].
+  evidence:
+    citation_id: chen2026
+    locator: §7.4
+    verification_note: 'CV §7.4: "(66) and (70) are exactly equivalent".'
+    verified: true
+- id: l2
+  kind: interpretation
+  passage: '**Lemma 2.** $\mathcal{A} = \mathcal{S}_d$ if and only if $d(\kappa - 1) = 1$ and $\mathcal{A} = \mathcal{B}$.'
+  rationale: Lemma 2, proved in Section 2.4; slice intervals recorded at /slices.
+- id: t3
+  kind: interpretation
+  passage: Then $\mathcal{A} = \mathcal{B}$ if and only if $\Phi$ has type $A_2$, $B_2$, $G_2$ or $A_1^3$.
+  rationale: Theorem 3, proved in Section 3.1; exact certificates for all 470 types of rank <= 8 (/classification).
+- id: t1-a2
+  kind: interpretation
+  passage: '| $A_2$ | 2 | 1 |'
+  rationale: Table 1 values computed exactly at /calibration/A2 (kappa 2, required d 1, matrix B).
+- id: t1-a13
+  kind: interpretation
+  passage: '| $A_1^3$ | 3/2 | 2 |'
+  rationale: Table 1 values at /calibration/A1^3.
+- id: t1-b2
+  kind: interpretation
+  passage: '| $B_2$ ($\alpha_1$ long) | 7/2 | 2/5 |'
+  rationale: Table 1 values at /calibration/B2.
+- id: t1-g2
+  kind: interpretation
+  passage: '| $G_2$ ($\alpha_1$ short) | 8 | 1/7 |'
+  rationale: Table 1 values at /calibration/G2.
+- id: t3-exc
+  kind: interpretation
+  passage: For the exceptional types an exact computation gives $(q_1,\kappa-1) = (48, 77)$ for $E_6$, $(289/2,
+    397/2)$ for $E_7$, $(529, 619)$ for $E_8$ and $(44, 54)$ for $F_4$.
+  rationale: Values at /node_bound/E6, E7, E8, F4 (q_node1 and kappa), exact rationals.
+- id: t3-e6
+  kind: computation
+  passage: For the exceptional types an exact computation gives $(q_1,\kappa-1) = (48, 77)$ for $E_6$, $(289/2,
+    397/2)$ for $E_7$, $(529, 619)$ for $E_8$ and $(44, 54)$ for $F_4$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /node_bound/E6/q_node1
+    reported: '48'
+    units: q_1
+    conditions: E6, node 1 in Bourbaki numbering; exact checks, simulation/run_all.py (rational arithmetic)
+- id: t3-e8
+  kind: computation
+  passage: For the exceptional types an exact computation gives $(q_1,\kappa-1) = (48, 77)$ for $E_6$, $(289/2,
+    397/2)$ for $E_7$, $(529, 619)$ for $E_8$ and $(44, 54)$ for $F_4$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /node_bound/E8/q_node1
+    reported: '529'
+    units: q_1
+    conditions: E8, node 1; exact checks, simulation/run_all.py (rational arithmetic)
+- id: t3-f4
+  kind: computation
+  passage: For the exceptional types an exact computation gives $(q_1,\kappa-1) = (48, 77)$ for $E_6$, $(289/2,
+    397/2)$ for $E_7$, $(529, 619)$ for $E_8$ and $(44, 54)$ for $F_4$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /node_bound/F4/q_node1
+    reported: '44'
+    units: q_1
+    conditions: F4, node 1; exact checks, simulation/run_all.py (rational arithmetic)
+- id: c4
+  kind: interpretation
+  passage: Then $\mathcal{A} = \mathcal{S}_d$ if and only if $(\Phi, d) = (A_2, 1)$ or $(A_1^3, 2)$.
+  rationale: Corollary 4 from Lemma 2, Theorem 3 and Lemma 1.
+- id: heights
+  kind: interpretation
+  passage: The calibration therefore allows only $A_2$ and $A_1^4$ with $d = 1$ and $A_1^3$ with $d = 2$.
+  rationale: Height argument of Section 3.2; check integral_calibration_exactly_A2_A1^3_A1^4.
+- id: r74
+  kind: interpretation
+  passage: The phenomenon described there, that the inequalities (66) reduce to (58) because one set lies in the
+    convex hull of the other, also occurs for root types $B_2$ and $G_2$, for example for $\mathrm{GSp}_4$, $\mathrm{Sp}_4\times\mathbb{G}_m$
+    and $G_2\times\mathbb{G}_m$, none of which is isogenous to the published examples.
+  rationale: Theorem 3; box comparison of A and B for B2 and G2 at /box/B2_A_vs_58 and /box/G2_A_vs_58.
+- id: gl3
+  kind: interpretation
+  passage: The cocharacter $(1,0,0)$ has $x = (1,0)$, $R = 1$ and $z = 1$; it lies in $\mathcal{A}$, while $\mathcal{S}_3$
+    requires $z = 3$.
+  rationale: Direct substitution; /examples/gl3.
+- id: a14-S
+  kind: computation
+  passage: At $z = 1$ the spectral cone contains 11 integral labels and the automorphic cone 7.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /examples/a1_4_degree_one/labels_S
+    reported: '11'
+    units: labels
+    conditions: (PGL2)^4 x Gm, d = 1, central degree 1; exact checks, simulation/run_all.py (rational arithmetic)
+- id: a14-A
+  kind: computation
+  passage: At $z = 1$ the spectral cone contains 11 integral labels and the automorphic cone 7.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /examples/a1_4_degree_one/labels_A
+    reported: '7'
+    units: labels
+    conditions: same, automorphic cone; exact checks, simulation/run_all.py (rational arithmetic)
+- id: a14-dS
+  kind: computation
+  passage: Summing the dimensions of the corresponding representations of $\check G = \mathrm{SL}_2^4\times\mathbb{G}_m$
+    gives 52 on the spectral side and 40 on the automorphic side, the difference being the four omitted three-dimensional
+    representations.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /examples/a1_4_degree_one/dim_S
+    reported: '52'
+    units: summed dimensions of SL2^4 representations
+    conditions: central degree 1; exact checks, simulation/run_all.py (rational arithmetic)
+- id: a14-dA
+  kind: computation
+  passage: Summing the dimensions of the corresponding representations of $\check G = \mathrm{SL}_2^4\times\mathbb{G}_m$
+    gives 52 on the spectral side and 40 on the automorphic side, the difference being the four omitted three-dimensional
+    representations.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /examples/a1_4_degree_one/dim_A
+    reported: '40'
+    units: summed dimensions
+    conditions: central degree 1; exact checks, simulation/run_all.py (rational arithmetic)
+- id: s-51stmt
+  kind: source
+  passage: The setup of §5.1 allows $\check\theta_G$, and hence $\check\rho'$, to be defined only on a finite cover
+    of $\mathbb{G}_m$, and the statement is the same in the arXiv and journal versions.
+  evidence:
+    citation_id: chen2026
+    locator: §5.1, Proposition 5.1
+    verification_note: 'Journal version read through the publisher page 2026-10-21: Proposition 5.1 states only
+      the inequalities; §5.1 allows finite covers. Same in arXiv v1.'
+    verified: true
+- id: p5
+  kind: interpretation
+  passage: Then $\dim V_\lambda^S\le 1$, and $V_\lambda^S\ne 0$ if and only if $$0\le\langle\lambda,\check\rho'\rangle\le\min_{\alpha\in\Delta}\langle\lambda,\check\alpha\rangle\qquad\text{and}\qquad\langle\lambda,\check\rho'\rangle\in\mathbb{Z}.$$
+    Consequently $k[X]\cong\bigoplus V_\lambda^*$ over the dominant $\lambda$ satisfying both conditions.
+  rationale: Proposition 5, proved in Section 4; direct computations at /invariants/summary.
+- id: sl2
+  kind: interpretation
+  passage: The smallest example is $G = \mathrm{SL}_2\times\mathbb{G}_m$ with $\theta_G$ the projection, $\check\theta_G(t)
+    = (1,t)$ and $\check\rho'(s^2) = (\mathrm{diag}(s,s^{-1}), s^2)$.
+  rationale: Direct computation /invariants/sl2_gm_standard (dim 0 while the inequalities hold).
+- id: p55
+  kind: interpretation
+  passage: The automorphic side needs no change.
+  rationale: 'Argument of Section 4: the proof of CV Proposition 5.5 uses the relevant weights only through the
+    cone they span.'
+- id: s-61
+  kind: source
+  passage: 'In the four groups of Theorem 7.1 of @chen2026 the shifted cocharacter is a genuine cocharacter: $\check\rho''(t)
+    = (\mathrm{diag}(t,1,t^{-1}), t)$ for $\mathrm{PGL}_3\times\mathbb{G}_m$ [@chen2026, §6.1], $\check\rho$ and
+    $\check\theta$ are cocharacters of $\mathrm{SL}_3\times\mathbb{G}_m$, the image of $\check\rho''$ for Garrett''s
+    group (51) is displayed as the cocharacter $t\mapsto(\mathrm{diag}(t,1)^{\times 3}, t)$ [@chen2026, §6.4], and
+    for the dual group (53) §6.5 of the journal version notes that $\check\rho''$ descends to a genuine cocharacter
+    on the quotient by the diagonal $\mu_3$.'
+  evidence:
+    citation_id: chen2026
+    locator: §6.1, §6.4, §6.5
+    verification_note: CV §6.1 displays rho-check-prime for PGL3 x Gm; §6.4 displays T-prime = Im(rho-check-prime)
+      for (51); journal §6.5 notes descent for (53).
+    verified: true
+- id: hilb
+  kind: interpretation
+  passage: As a check of Proposition 5 against independent descriptions of these spaces, the graded dimensions it
+    predicts for $\mathrm{PGL}_3\times\mathbb{G}_m$ agree through degree 12 with the Hilbert series $(1-t^2)(1-t^3)/(1-t)^8$
+    of the nilpotent cone of $\mathfrak{sl}_3$, a complete intersection of the two basic invariants [@kostant1963],
+    and those for Garrett's group agree through degree 12 with the Hilbert series $(1-t^4)/(1-t)^8$ of the quartic
+    hypersurface of $(2,2,2)$-tensors described in [@chen2026, §6.4].
+  rationale: Checks hilbert_nilcone_sl3 and hilbert_hyperdeterminant at /examples/hilbert (degrees 0-12).
+- id: t6
+  kind: interpretation
+  passage: Then $\mathcal{A}_\Lambda = \mathcal{S}_\Lambda$ if and only if $\check\rho'_{\check G}$ is a cocharacter
+    of $\check T$, equivalently $\rho - \theta_G/d\in X^*(T)$.
+  rationale: Theorem 6, proved in Section 5.1.
+- id: a2forms
+  kind: interpretation
+  passage: There are two global forms, $\mathrm{PGL}_3\times\mathbb{G}_m$ and $\mathrm{SL}_3\times\mathbb{G}_m$,
+    dual to each other.
+  rationale: Lattice argument of Section 5.2 (P/Q has prime order 3).
+- id: p7-67
+  kind: computation
+  passage: Among the 67 subspaces of $\mathbb{F}_2^4$, 35 are admissible.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lattices/subspaces_F2_4
+    reported: '67'
+    units: subspaces
+    conditions: exact checks, simulation/run_all.py (rational arithmetic)
+- id: p7-35
+  kind: computation
+  passage: Among the 67 subspaces of $\mathbb{F}_2^4$, 35 are admissible.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lattices/admissible
+    reported: '35'
+    units: codes
+    conditions: exact checks, simulation/run_all.py (rational arithmetic)
+- id: p7-12
+  kind: computation
+  passage: Both hold for exactly five codes, the subspaces with $\langle u\rangle\subseteq C\subseteq u^\perp$;
+    exactly one holds for 12 codes; neither holds for 18.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lattices/one_sided
+    reported: '12'
+    units: codes
+    conditions: exact checks, simulation/run_all.py (rational arithmetic)
+- id: p7-18
+  kind: computation
+  passage: Both hold for exactly five codes, the subspaces with $\langle u\rangle\subseteq C\subseteq u^\perp$;
+    exactly one holds for 12 codes; neither holds for 18.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /lattices/neither
+    reported: '18'
+    units: codes
+    conditions: exact checks, simulation/run_all.py (rational arithmetic)
+- id: p7-five
+  kind: interpretation
+  passage: Both hold for exactly five codes, the subspaces with $\langle u\rangle\subseteq C\subseteq u^\perp$;
+    exactly one holds for 12 codes; neither holds for 18.
+  rationale: Proposition 7; /lattices/passing_both = 5, passing_equals_interval = true.
+- id: tab2
+  kind: interpretation
+  passage: '| Garrett''s group (51) | $\langle u\rangle$ | yes | yes |'
+  rationale: Codes derived from explicit characters; /lattices/named.
+- id: so4
+  kind: interpretation
+  passage: 'This group is its own Langlands dual, and Corollary 4 and Theorem 6 show that the support comparison
+    in §7.4 of @chen2026 holds for it in both directions, with the same grading and the same exponent of the discriminant:
+    $\dim G/U - (2\kappa - 1)d = 7 - 4 = 3$, as in (68) of the source.'
+  rationale: SO4 and GL2 are Langlands self-dual; code self-dual (/lattices/passing_self_dual = 3). Exponent 3 from
+    dim G/U = 7 and (2 kappa - 1) d = 4.
+- id: so4-open
+  kind: interpretation
+  passage: We have not checked the other inputs of the proof of Theorem 7.1 for this group, in particular the condition
+    of §7.3 that every smaller orbit on $X$ have a stabilizer containing the unipotent radical of a proper parabolic
+    subgroup, so we make no claim about its periods.
+  rationale: Explicit limitation.
+- id: g-12
+  kind: computation
+  passage: At $z = 3$ the automorphic support has 12 labels and the spectral support 10; the missing labels are
+    $(1,1,2)$ and $(1,2,1)$, each of dimension 12 for $\check G$, so the summed dimensions are 214 and 190.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /gl2_pgl2_pgl2_summary/z3_labels_A
+    reported: '12'
+    units: labels
+    conditions: identity (1), GL2 x PGL2 x PGL2, central degree 3; exact checks, simulation/run_all.py (rational
+      arithmetic)
+- id: g-10
+  kind: computation
+  passage: At $z = 3$ the automorphic support has 12 labels and the spectral support 10; the missing labels are
+    $(1,1,2)$ and $(1,2,1)$, each of dimension 12 for $\check G$, so the summed dimensions are 214 and 190.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /gl2_pgl2_pgl2_summary/z3_labels_S
+    reported: '10'
+    units: labels
+    conditions: same, spectral support with the integrality condition; exact checks, simulation/run_all.py (rational
+      arithmetic)
+- id: g-214
+  kind: computation
+  passage: At $z = 3$ the automorphic support has 12 labels and the spectral support 10; the missing labels are
+    $(1,1,2)$ and $(1,2,1)$, each of dimension 12 for $\check G$, so the summed dimensions are 214 and 190.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /gl2_pgl2_pgl2_summary/z3_dim_A
+    reported: '214'
+    units: summed dimensions
+    conditions: central degree 3; exact checks, simulation/run_all.py (rational arithmetic)
+- id: g-190
+  kind: computation
+  passage: At $z = 3$ the automorphic support has 12 labels and the spectral support 10; the missing labels are
+    $(1,1,2)$ and $(1,2,1)$, each of dimension 12 for $\check G$, so the summed dimensions are 214 and 190.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /gl2_pgl2_pgl2_summary/z3_dim_S
+    reported: '190'
+    units: summed dimensions
+    conditions: central degree 3; exact checks, simulation/run_all.py (rational arithmetic)
+- id: g-125
+  kind: computation
+  passage: At $z = 8$ the counts are 125 and 85 (Figure 2).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /gl2_pgl2_pgl2_summary/z8_labels_A
+    reported: '125'
+    units: labels
+    conditions: central degree 8; exact checks, simulation/run_all.py (rational arithmetic)
+- id: g-85
+  kind: computation
+  passage: At $z = 8$ the counts are 125 and 85 (Figure 2).
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /gl2_pgl2_pgl2_summary/z8_labels_S
+    reported: '85'
+    units: labels
+    conditions: central degree 8; exact checks, simulation/run_all.py (rational arithmetic)
+- id: g-inv
+  kind: interpretation
+  passage: 'By Proposition 5 the label $(p;z) = (1,1,2;3)$, for which the invariant would have to be a polynomial
+    of degree $1/2$, gives no $S$-invariant vector: the torus $T''$ acts on the 12-dimensional representation with
+    odd weights only.'
+  rationale: Direct computation /invariants/gl2_sl2_sl2_label (dim 0, inequalities hold).
+- id: x-470
+  kind: computation
+  passage: It computes the Cartan data, positive roots, $n$, $m$ and $\kappa$ for all 470 semisimple types of rank
+    at most 8 with $\kappa > 1$, checking $n$ and $m$ against half-sums of positive roots and coroots and $2\kappa$
+    against $H$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /classification/types_with_kappa_gt_1
+    reported: '470'
+    units: types
+    conditions: exact checks, simulation/run_all.py (rational arithmetic)
+- id: x-1377
+  kind: computation
+  passage: 'It also verifies the closed forms of $q_1$ and $\kappa$ used in the proof for all classical types of
+    rank at most 8, and compares the cones directly on integral boxes: 1,377 points for $(A_2, 1)$ and 3,456 for
+    $(A_1^3, 2)$ with no disagreement, and disagreement for $(A_2, 3)$ and $(A_1^4, 1)$.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /box/A2_d1/points
+    reported: 1,377
+    units: lattice points
+    conditions: x in [0,8]^2, 0 <= z <= 16; exact checks, simulation/run_all.py (rational arithmetic)
+- id: x-3456
+  kind: computation
+  passage: 'It also verifies the closed forms of $q_1$ and $\kappa$ used in the proof for all classical types of
+    rank at most 8, and compares the cones directly on integral boxes: 1,377 points for $(A_2, 1)$ and 3,456 for
+    $(A_1^3, 2)$ with no disagreement, and disagreement for $(A_2, 3)$ and $(A_1^4, 1)$.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /box/A1^3_d2/points
+    reported: 3,456
+    units: lattice points
+    conditions: x in [0,5]^3, 0 <= z <= 15; exact checks, simulation/run_all.py (rational arithmetic)
+- id: x-799
+  kind: computation
+  passage: For root types $A_1$, $A_1^2$ and $A_1^3$, $V_\lambda$ was realized as a tensor product of symmetric
+    powers with the raising operators acting on monomials, and $V_\lambda^S$ computed as the kernel of $\mathrm{Lie}(U')$
+    on the zero-weight space of $T'$, for 799 pairs of a highest weight and a half-integral central weight.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /invariants/summary/A1_cases
+    reported: '799'
+    units: cases
+    conditions: exact checks, simulation/run_all.py (rational arithmetic)
+- id: x-29
+  kind: computation
+  passage: The dimension was at most one, and equal to one exactly when both conditions of Proposition 5 hold; in
+    29 of the 105 cases satisfying the inequalities, the integrality condition fails and there is no invariant.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /invariants/summary/A1_cases_inequalities_hold_but_no_invariant
+    reported: '29'
+    units: cases
+    conditions: exact checks, simulation/run_all.py (rational arithmetic)
+- id: x-105
+  kind: computation
+  passage: The dimension was at most one, and equal to one exactly when both conditions of Proposition 5 hold; in
+    29 of the 105 cases satisfying the inequalities, the integrality condition fails and there is no invariant.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /invariants/summary/A1_cases_inequalities_hold
+    reported: '105'
+    units: cases
+    conditions: exact checks, simulation/run_all.py (rational arithmetic)
+- id: x-144
+  kind: computation
+  passage: For $\mathrm{SL}_3\times\mathbb{G}_m$, $V_{(a,b)}$ was realized as the harmonic polynomials of bidegree
+    $(a,b)$ in $x_1, x_2, x_3$ and $y_1, y_2, y_3$, and all 144 cases with $a, b\le 3$ agree with the criterion.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /invariants/summary/A2_cases
+    reported: '144'
+    units: cases
+    conditions: exact checks, simulation/run_all.py (rational arithmetic)
+- id: x-26
+  kind: computation
+  passage: The program enumerates the 67 subspaces of $\mathbb{F}_2^4$ for Proposition 7, computes the supports
+    of §5.4 up to $z = 8$ and the Hilbert series of §4 up to degree 12, and runs 26 checks in all.
+  evidence:
+    file: simulation/output/results.json
+    run_id: model
+    pointer: /n_checks
+    reported: '26'
+    units: checks
+    conditions: exact checks, simulation/run_all.py (rational arithmetic)
+- id: s-chen6
+  kind: source
+  passage: For tori, Chen proposes provisional definitions in which a space with finite stabilizers is paired with
+    a Deligne–Mumford quotient stack, proves weak numerical duality for such pairs, and expects the same for central
+    isogenies of reductive groups [@chen2024, §6 and Theorem 6.10]; a stacky spectral side also appears in the $\mathrm{GSO}_6$
+    example of Cauchi, Chen and Gutierrez Terradillos [@cauchi2026].
+  evidence:
+    citation_id: chen2024
+    locator: §6, Theorem 6.10
+    verification_note: 'Chen toric §6 read: provisional definitions for DM stacks, Theorem 6.10, and the paragraph
+      after Remark 6.11 expecting the same for central isogenies of reductive groups.'
+    verified: true
+- id: s-cgt
+  kind: source
+  passage: For tori, Chen proposes provisional definitions in which a space with finite stabilizers is paired with
+    a Deligne–Mumford quotient stack, proves weak numerical duality for such pairs, and expects the same for central
+    isogenies of reductive groups [@chen2024, §6 and Theorem 6.10]; a stacky spectral side also appears in the $\mathrm{GSO}_6$
+    example of Cauchi, Chen and Gutierrez Terradillos [@cauchi2026].
+  evidence:
+    citation_id: cauchi2026
+    locator: Abstract
+    verification_note: 'arXiv abstract read: Langlands dual automorphic integral computes a finite sum of L-functions,
+      reflecting stacky structure on the spectral side.'
+    verified: true
+- id: s-ast
+  kind: source
+  passage: In four-dimensional gauge theory, one Lie algebra admits several global forms of the gauge group, which
+    are distinguished by their line operators and share the correlation functions of local operators [@aharony2013].
+  evidence:
+    citation_id: aharony2013
+    locator: Abstract
+    verification_note: 'arXiv abstract read: different consistent choices of line operators give distinct theories
+      with the same correlation functions of local operators in R^4.'
+    verified: true
+- id: s-nak
+  kind: source
+  passage: Mathematical constructions of the dual Hamiltonian space, such as Nakajima's in the cotangent-type case
+    [@nakajima2024], would be the place to make such a comparison precise.
+  evidence:
+    citation_id: nakajima2024
+    locator: Abstract
+    verification_note: 'arXiv abstract read: S-dual of a smooth affine symplectic G-manifold under the cotangent
+      type assumption, modified from Coulomb branches, motivated by Gaiotto-Witten.'
+    verified: true
+- id: open
+  kind: interpretation
+  passage: Three questions remain open.
+  rationale: Stated open questions.
+runs:
+- id: model
+  record: verification/model.json
+  required: true

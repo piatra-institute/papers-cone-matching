@@ -1,0 +1,355 @@
+references:
+- id: aharony2013
+  type: article-journal
+  title: Reading between the lines of four-dimensional gauge theories
+  author:
+  - family: Aharony
+    given: Ofer
+  - family: Seiberg
+    given: Nathan
+  - family: Tachikawa
+    given: Yuji
+  container-title: Journal of High Energy Physics
+  volume: '2013'
+  issue: '8'
+  DOI: 10.1007/jhep08(2013)115
+  issued:
+    date-parts:
+    - - 2013
+  page: '115'
+- id: benzvi2024
+  type: article
+  title: Relative Langlands duality
+  author:
+  - family: Ben-Zvi
+    given: David
+  - family: Sakellaridis
+    given: Yiannis
+  - family: Venkatesh
+    given: Akshay
+  publisher: arXiv
+  number: '2409.04677'
+  DOI: 10.48550/arXiv.2409.04677
+  issued:
+    date-parts:
+    - - 2024
+- id: beuzartplessis2025
+  type: article
+  title: Introduction to the relative Langlands program
+  author:
+  - family: Beuzart-Plessis
+    given: Raphaël
+  publisher: arXiv
+  number: '2509.18062'
+  DOI: 10.48550/arXiv.2509.18062
+  issued:
+    date-parts:
+    - - 2025
+- id: borel1979
+  type: chapter
+  title: Automorphic $L$-functions
+  author:
+  - family: Borel
+    given: A.
+  container-title: Automorphic Forms, Representations and $L$-Functions, Part 2
+  page: 27-61
+  publisher: American Mathematical Society
+  DOI: 10.1090/pspum/033.2/546608
+  issued:
+    date-parts:
+    - - 1979
+  collection-title: Proceedings of Symposia in Pure Mathematics
+  volume: '33'
+  editor:
+  - family: Borel
+    given: A.
+  - family: Casselman
+    given: W.
+  publisher-place: Providence, RI
+- id: bourbaki2002
+  type: book
+  title: Lie Groups and Lie Algebras, Chapters 4–6
+  author:
+  - family: Bourbaki
+    given: Nicolas
+  publisher: Springer
+  DOI: 10.1007/978-3-540-89394-3
+  issued:
+    date-parts:
+    - - 2002
+  collection-title: Elements of Mathematics
+  publisher-place: Berlin
+  translator:
+  - family: Pressley
+    given: Andrew
+  original-date:
+    date-parts:
+    - - 1968
+- id: bouthier2016
+  type: article-journal
+  title: On the formal arc space of a reductive monoid
+  author:
+  - family: Bouthier
+    given: A.
+  - family: Ngô
+    given: B. C.
+  - family: Sakellaridis
+    given: Y.
+  container-title: American Journal of Mathematics
+  volume: '138'
+  issue: '1'
+  page: 81-108
+  DOI: 10.1353/ajm.2016.0004
+  issued:
+    date-parts:
+    - - 2016
+- id: braverman1999
+  type: article-journal
+  title: On the Schwartz space of the basic affine space
+  author:
+  - family: Braverman
+    given: Alexander
+  - family: Kazhdan
+    given: David
+  container-title: Selecta Mathematica (New Series)
+  volume: '5'
+  issue: '1'
+  page: 1-28
+  DOI: 10.1007/s000290050041
+  issued:
+    date-parts:
+    - - 1999
+- id: cauchi2026
+  type: article
+  title: Relative Langlands duality of the Bump–Friedberg–Ginzburg $\mathrm{GSO}_6$-integral
+  author:
+  - family: Cauchi
+    given: Antonio
+  - family: Chen
+    given: Eric Yen-Yo
+  - family: Gutierrez Terradillos
+    given: Armando
+  publisher: arXiv
+  number: '2608.30576'
+  DOI: 10.48550/arXiv.2608.30576
+  issued:
+    date-parts:
+    - - 2026
+- id: chen2024
+  type: article
+  title: Relative Langlands duality of toric periods
+  author:
+  - family: Chen
+    given: Eric Y.
+  publisher: arXiv
+  number: '2405.18231'
+  DOI: 10.48550/arXiv.2405.18231
+  issued:
+    date-parts:
+    - - 2024
+- id: chen2026
+  type: article-journal
+  title: Some singular examples of relative Langlands duality
+  author:
+  - family: Chen
+    given: Eric Y.
+  - family: Venkatesh
+    given: Akshay
+  container-title: Selecta Mathematica (New Series)
+  volume: '32'
+  issue: '5'
+  DOI: 10.1007/s00029-026-01202-5
+  issued:
+    date-parts:
+    - - 2026
+  page: '97'
+- id: feng2025
+  type: article-journal
+  title: Geometric Langlands Duality for Periods
+  author:
+  - family: Feng
+    given: Tony
+  - family: Wang
+    given: Jonathan
+  container-title: Geometric and Functional Analysis
+  volume: '35'
+  issue: '2'
+  page: 463-541
+  DOI: 10.1007/s00039-025-00702-4
+  issued:
+    date-parts:
+    - - 2025
+- id: gaiotto2009
+  type: article-journal
+  title: S-duality of boundary conditions in $\mathcal{N} = 4$ super Yang–Mills theory
+  author:
+  - family: Gaiotto
+    given: David
+  - family: Witten
+    given: Edward
+  container-title: Advances in Theoretical and Mathematical Physics
+  volume: '13'
+  issue: '3'
+  page: 721-896
+  DOI: 10.4310/atmp.2009.v13.n3.a5
+  issued:
+    date-parts:
+    - - 2009
+- id: garrett1987
+  type: article-journal
+  title: 'Decomposition of Eisenstein Series: Rankin Triple Products'
+  author:
+  - family: Garrett
+    given: Paul B.
+  container-title: Annals of Mathematics
+  volume: '125'
+  issue: '2'
+  page: 209-235
+  DOI: 10.2307/1971310
+  issued:
+    date-parts:
+    - - 1987
+- id: ginzburg1991
+  type: article-journal
+  title: A Rankin–Selberg integral for the adjoint representation of $\mathrm{GL}_3$
+  author:
+  - family: Ginzburg
+    given: David
+  container-title: Inventiones Mathematicae
+  volume: '105'
+  issue: '1'
+  page: 571-588
+  DOI: 10.1007/bf01232279
+  issued:
+    date-parts:
+    - - 1991
+- id: humphreys1972
+  type: book
+  title: Introduction to Lie Algebras and Representation Theory
+  author:
+  - family: Humphreys
+    given: James E.
+  publisher: Springer
+  DOI: 10.1007/978-1-4612-6398-2
+  issued:
+    date-parts:
+    - - 1972
+  collection-title: Graduate Texts in Mathematics
+  collection-number: '9'
+  publisher-place: New York
+- id: kapustin2007
+  type: article-journal
+  title: Electric-magnetic duality and the geometric Langlands program
+  author:
+  - family: Kapustin
+    given: Anton
+  - family: Witten
+    given: Edward
+  container-title: Communications in Number Theory and Physics
+  volume: '1'
+  issue: '1'
+  page: 1-236
+  DOI: 10.4310/cntp.2007.v1.n1.a1
+  issued:
+    date-parts:
+    - - 2007
+- id: knop2017
+  type: article-journal
+  title: The dual group of a spherical variety
+  author:
+  - family: Knop
+    given: Friedrich
+  - family: Schalke
+    given: Barbara
+  container-title: Transactions of the Moscow Mathematical Society
+  volume: '78'
+  page: 187-216
+  DOI: 10.1090/mosc/270
+  issued:
+    date-parts:
+    - - 2017
+- id: kostant1963
+  type: article-journal
+  title: Lie Group Representations on Polynomial Rings
+  author:
+  - family: Kostant
+    given: Bertram
+  container-title: American Journal of Mathematics
+  volume: '85'
+  issue: '3'
+  page: 327-404
+  DOI: 10.2307/2373130
+  issued:
+    date-parts:
+    - - 1963
+- id: nakajima2024
+  type: article
+  title: S-dual of Hamiltonian $G$ spaces and relative Langlands duality
+  author:
+  - family: Nakajima
+    given: Hiraku
+  publisher: arXiv
+  number: '2409.06303'
+  DOI: 10.48550/arXiv.2409.06303
+  issued:
+    date-parts:
+    - - 2024
+- id: sakellaridis2012
+  type: article-journal
+  title: Spherical varieties and integral representations of $L$-functions
+  author:
+  - family: Sakellaridis
+    given: Yiannis
+  container-title: Algebra & Number Theory
+  volume: '6'
+  issue: '4'
+  page: 611-667
+  DOI: 10.2140/ant.2012.6.611
+  issued:
+    date-parts:
+    - - 2012
+- id: sakellaridis2017
+  type: article-journal
+  title: Periods and harmonic analysis on spherical varieties
+  author:
+  - family: Sakellaridis
+    given: Yiannis
+  - family: Venkatesh
+    given: Akshay
+  container-title: Astérisque
+  DOI: 10.24033/ast.1040
+  issued:
+    date-parts:
+    - - 2017
+  volume: '396'
+- id: sakellaridis2022
+  type: article-journal
+  title: Intersection complexes and unramified $L$-factors
+  author:
+  - family: Sakellaridis
+    given: Yiannis
+  - family: Wang
+    given: Jonathan
+  container-title: Journal of the American Mathematical Society
+  volume: '35'
+  issue: '3'
+  page: 799-910
+  DOI: 10.1090/jams/990
+  issued:
+    date-parts:
+    - - 2022
+- id: springer1998
+  type: book
+  title: Linear Algebraic Groups
+  author:
+  - family: Springer
+    given: T. A.
+  publisher: Birkhäuser
+  DOI: 10.1007/978-0-8176-4840-4
+  issued:
+    date-parts:
+    - - 1998
+  edition: '2'
+  collection-title: Progress in Mathematics
+  collection-number: '9'
+  publisher-place: Boston

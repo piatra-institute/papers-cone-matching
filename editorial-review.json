@@ -1,0 +1,10 @@
+{
+  "manuscript_sha256": "a075fdace83f1ae08d93fa49449e8ab139b01d60d3d82497b401f464c0e1e848",
+  "full_read": true,
+  "argument_review": true,
+  "structure_review": true,
+  "voice_review": true,
+  "source_review": true,
+  "final_read": true,
+  "notes": "Full read of the final manuscript after the polish pass (2026-10-21). Changes: Figure 2(b) legend relabelled without equation numbers; Table 2 caption shortened and the explanation of the codes moved into the following paragraph so the table stays on one page; reference titles use inline math for GL_3, GSO_6, N = 4, G and L. Earlier review findings stand: proofs re-derived, claims rebound to the recorded run (83 claims, 29 computational, no mismatch), voice gate OK."
+}
